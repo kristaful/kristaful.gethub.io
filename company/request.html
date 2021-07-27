@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Author: Krista Alexander
+      Date: June 17 2021
+      Assignment: About a Company
+      File Name: request.html
+    -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Photography by K. Alexander, Photographer, Wedding Photography" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cb0a3be9df.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Request Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="product.html">Gallery</a> |
+      <a href="aboutme.html">About Me</a> |
+      <a href="request.html">Request Appointment</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form action="#">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+        <label for="type">Type of Photos Wanted</label>
+        <select id="type" name="type">
+        <option value="Family">Family Portraits</option>
+        <option value="Wedding">Wedding</option>
+        <option value="Seniors">Senior Portraits</option>
+        <option value="Unique">Something Unique</option>
+        <option value="Other">Other...</option>
+        </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <footer>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <p>All images by K. Alexander &copy; June 2021</p>
+  </footer>
+
+</body>
+</html>

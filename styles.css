@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/*--Author: Krista Alexander
+    Date: July 26 2021
+    Assignment: onlineProfile
+    File Name: styles.css
+*/
+
+/* CSS Variables */
+
+:root {
+  --primary: #777;
+  --dark: #282E34;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: var(--primary);
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/floral.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("images/pinkfloral.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("images/texture.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: var(--light);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+p, li {
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  list-style: circle;
+}
+
+.center-text {
+  color: var(--dark);
+  text-align: center;
+}
+
+.border {
+   font-size:25px;
+   color: var(--dark);
+}
+
+.about, .education, .skills {
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+.about {
+  color: var(--primary);
+  background-color: white;
+}
+
+.education {
+  color:#ddd;
+  background-color:var(--dark);
+}
+
+.skills {
+  color: var(--primary);
+  background-color: white;
+  display: flex;
+}
+
+/* style flex box columns */
+
+.column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+.columns {
+  margin: 10px;
+  padding: 1em;
+  width: 300px;
+  background-color: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+
+
+/* disable parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
