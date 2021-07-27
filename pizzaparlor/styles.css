@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/*--Author: Krista Alexander
+    Date: July 11 2021
+    Assignment: Pizza Parlor
+    File Name: styles.css
+*/
+
+/* Style main body and margins */
+
+html {
+  background-color: white;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: Brush Script MT, cursive;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 60px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* style nav list */
+
+.nav-list {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 10px;
+  padding:5rem 0;
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+  background-color: rgba(255, 255, 253, .5);
+  padding: 14px 16px;
+}
+
+.nav-list a {
+  color: black;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: rgba(108, 163, 81, 0.98);
+
+}
+
+/* style flex box columns and descriptions */
+
+.column-layout {
+  background-color: hsla(360, 100%, 100%, 0.5);
+  padding: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.columns {
+  margin: 10px;
+  border: 1px solid darkgrey;
+  width: 425px;
+}
+
+.columns img {
+  width: 100%;
+  height: auto;
+}
+
+.columns:hover {
+  border: 1px solid black;
+}
+
+/* style the form conainter */
+
+div.form-container {
+  width: 75%;
+  color: white;
+  border-color: black;
+  border-style: double;
+  background-color: rgba(216, 79, 79, 0.50);
+  padding: 30px 30px 30px 30px;
+}
+
+/* Style the Order Form */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the submit button */
+
+input[type=submit], button {
+  color: black;
+  padding: 12px 20px;
+  border: solid;
+  border-color: darkgrey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit], button:hover {
+  background-color: grey;
+}
+
+.flex-form {
+  padding: 50px 50px;
+  display: flex;
+}
+
+/* make the blockquote quotations and styles */
+
+.flex-customer blockquote {
+  quotes: "\201C" "\201D";
+  font-size: 0.95em;
+  font-family: Verdana, sans-serif, cursive;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: double;
+}
+
+.flex-customer blockquote::before {
+  content: open-quote;
+  font-size: 1.6em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.flex-customer blockquote::after {
+  content: close-quote;
+  font-size: 1.6em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.flex-customer blockquote {
+   color: black;
+   border-style: double;
+   font-size: 1.1em;
+   padding: 10px;
+   margin: 10px auto;
+   width: 70%;
+}
+
+.flex-customer blockquote p {
+   margin: 0px 10px 10px 10px;
+   padding-bottom: 15px;
+}
+
+.flex-customer cite {
+   display: block;
+   margin: 0px auto 30px;
+   text-align: right;
+   width: 70%;
+}
+
+.flex-customer img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+cite img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.socials {
+  font-size: 2em;
+  padding-left: 50px;
+  position: absolute;
+}
+
+aside {
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 568px) {
+  .column-layout, .flex-form {
+    display: block;
+  }
+
+    .columns {
+     width: 100%;
+  }
+
+  .nav-list {
+    display: block;
+    text-align: center;
+  }
+}

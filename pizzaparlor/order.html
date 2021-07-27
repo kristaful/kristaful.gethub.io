@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Author: Krista Alexander
+      Date: July 11 2021
+      Assignment: Pizza Parlor
+      File Name: order.html
+    -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Pizza, Pizza Parlor, Cheech's Pizza, Delivery" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cb0a3be9df.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cheech's Pizza Order Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="menu.html">Menu</a></li>
+          <li class="nav-item"><a href="order.html">Order Online</a></li>
+          <li class="nav-item"><a href="#">Our Location</a></li>
+        </ul>
+    </nav>
+    <h1>Cheech's Pizza Parlor</h1>
+    <h2>&mdash;Order Now&mdash;</h2>
+  </header>
+
+<div class="flex-form">
+  <div class="form-container">
+  <form action="#">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone #...">
+
+      <label for="type">Type of Pizza Wanted</label>
+      <select id="type" name="type">
+      <option value="select">Please Select One...</option>
+      <option value="pepperoni">Pepperoni & Mozzarella</option>
+      <option value="driedtomato">Sun Dried Tomato</option>
+      <option value="spinach">Spinach Alfredo</option>
+      <option value="cheddar">Cheddar with Mint and Feta</option>
+      <option value="fancy">Pizza Fancy</option>
+      <option value="strawberry">Strawberry Dream</option>
+      </select>
+
+      <label for="qnty">Quantity</label>
+      <input type="number" id="qnty" name="quantity" min="1" max="20"><br><br>
+
+    <label for="subject">Additonal Notes:</label>
+    <textarea id="subject" name="subject" placeholder="Parm, Crushed Red Pepper...?" style="height:50px"></textarea>
+
+    <input type="submit" value="Place Order">
+  </form>
+  </div>
+
+<div class="flex-customer">
+  <blockquote>
+      <p><img src="images/reviewslice.jpg" alt="4 slice" /><img src="images/reviewslice.jpg" alt="" /><img src="images/reviewslice.jpg" alt="" /><img src="images/reviewslice.jpg" alt="" /></p>
+     <p>Fast, delicious, and affordable! It's a Four Pie review from me. Cheech's makes it easy to support local business. I only wish they made lasagna...</p>
+  </blockquote>
+  <cite> <img src="images/garfield.jpg" alt="garfield the cat" /> &mdash;Garfield </cite>
+
+  <div class="socials">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+
+  <aside>
+    <h3>Want to get the best deals? Sign up for our newsletter below! Weekly deals and steals for our most loyal customers.</h3><br>
+
+    <button>Sign-up for Newsletter</button>
+  </aside>
+
+</div>
+</div>
+
+</body>
+</html>

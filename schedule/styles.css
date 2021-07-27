@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*--Author: Krista Alexander
+    Date: June 24 2021
+    Assignment: My Schedule
+    File Name: styles.css
+*/
+
+#schedule {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+body {
+  background-image: url(schbackground.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
+h3 {
+  font-variant: small-caps;
+  font-weight: lighter;
+}
+
+table {
+  margin:70px 0px 0px 800px;
+}
+
+table, th, td {
+  border: darkgrey solid;
+}
+
+th, td {
+  padding: 6px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(233, 209, 232, 0.2);
+}
